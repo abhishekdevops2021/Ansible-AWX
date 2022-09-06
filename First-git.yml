@@ -4,5 +4,6 @@
  tasks:
   -
    name: "create file"
-   command: touch /home/testfileansible-with-github2.txt
+   apt: 
+     update: yes
   -
