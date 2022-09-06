@@ -1,0 +1,9 @@
+-
+ name: this is first playbook
+ hosts: all
+ become: yes
+ tasks:
+  -
+   name: "create file"
+   command: touch /home/testfileansible-with-github.txt
+  -
