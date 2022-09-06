@@ -1,6 +1,6 @@
 -
  name: this is first playbook
- hosts: localhost
+ hosts: all
  tasks:
 
   - name: "apt-get update"
