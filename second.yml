@@ -1,7 +1,17 @@
-- 
-  name: Update and upgrade apt packages
-  hosts: all
-  apt:
-    upgrade: yes
-    update_cache: yes
+-
+ name: this is first playbook
+ hosts: localhost
+ tasks:
+
+  - name: "apt-get update"
+    apt:
+      update_cache: yes
+      cache_valid_time: 3600
+
+  - name: "install zip"
+    apt:
+      name: ['zip']
+      state: latest
+  -
+
  
